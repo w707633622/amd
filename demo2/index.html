@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{margin:０;　padding: 0;}
+		#div1{
+			position: absolute;
+			width: 300px;
+			height: 300px;
+			background-color: red;
+			display: none;
+		}
+		#div2{
+			position: absolute;
+			width: 20px;
+			height: 20px;
+			background-color: yellow;
+			bottom: 0;
+			right: 0;
+		}
+		#div3{
+			position: absolute;;
+			width: 100px;
+			height: 100px;
+			top: 0;
+			right: 0;
+			background-color: pink;
+		}
+	</style>
+	<script src="js/require.js" defer async="ture" data-main="js/main.js"></script>
+	<script>
+		window.onload = function(){
+			require(["main"], function(main){
+				main.main();
+			})
+		}
+	</script>
+</head>
+<body>
+	<input id="input1" type="button" value="点击">
+	<div id="div1">
+		<div id="div2"></div>
+	</div>
+	<div id="div3"></div>
+
+
+</body>
+</html>
